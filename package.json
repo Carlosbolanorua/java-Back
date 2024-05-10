@@ -1,0 +1,14 @@
+{
+  "name": "CURSO",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Carlosbolanorua <daniel14agosto@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev":"nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
