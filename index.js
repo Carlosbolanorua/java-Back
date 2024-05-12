@@ -15,9 +15,14 @@ function requestController(req,res){
     }
     
     if(method==="GET" && url==="/about"){
-        
+        res.setHeader("Content-type","text/html; charset=utf-8")
+        res.write("<h1>Hola mundo desde la pagina ABOUT</h1>")
+        res.end()
+        return
     }
-
+    res.setHeader("Content-type","text/html; charset=utf-8")
+    res.write("<h1>Página no encontrada</h1>")
+    res.end()
 }
 //Configurar servidor
 const server = http.createServer(requestController)
